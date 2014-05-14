@@ -1,13 +1,10 @@
 <?php
 
-
-
 # Include html header
-include(APP_VIEW . "/header.php");
+include( APP_VIEW . "/header.php" );
 
 # Include main navigation
-include(APP_VIEW . "/nav.php");
-
+include( APP_VIEW . "/nav.php" );
 
 switch ( $_GET["a"] ) {
 
@@ -20,8 +17,8 @@ switch ( $_GET["a"] ) {
         include( APP_VIEW ."/home/homeSubNav.php" );
         include( APP_VIEW ."/home/homeView.php" );
         break;
+        
 }
 
-
 # Include html footer
-include(APP_VIEW . "/footer.php");
+include( APP_VIEW . "/footer.php" );

@@ -1,52 +1,98 @@
 body {
-	display:	block;
+	display:			block;
 }
 
 
 #content {
     
-	width: 		900px;
-	margin: 	auto;
+	width: 				900px;
+	margin: 			auto;
 }
 
 
 #topPage {
-    position: 	static;
-    width: 		900px;
-    height: 	150px;
-    border: 	thin solid black; 
+    position: 			static;
+    width: 				900px;
+    height: 			150px;
+    border: 			thin solid black; 
 }
 
 #nav {
-    position: 	static;
-	width: 	 	900px;
-	height: 	50px;
-    border: 	thin solid black;
+    position: 			static;
+	width: 	 			900px;
+	height: 			50px;
+    border: 			thin solid black;
 }
 
 #subNav {
-    position: 	static;
-	float: 		left;
-    width: 		200px;
-	height:		500px;
-    border: 	thin solid black;
+    position: 			static;
+	float: 				left;
+    width: 				200px;
+	height:				500px;
+    border: 			thin solid black;
 }
 
 #page {
-    position: 	static;
-	float:		right;
-	width:  	696px;
-	height:		500px;
-	border: 	thin solid black;
+    position: 			static;
+	float:				right;
+	width:  			696px;
+	height:				500px;
+	border: 			thin solid black;
+}
+
+#pageFullWidth {
+    position: 			static;
+	width:  			900px;
+	height:				500px;
+	border: 			thin solid black;
 }
 
 #footer {
-    position: 	static;
-	clear:		both;
-	width:  	900px;
-    height: 	50px;
-    border: 	thin solid black;
+    position: 			static;
+	clear:				both;
+	width:  			900px;
+    height: 			50px;
+    border: 			thin solid black;
 }
+
+br.clear {
+	clear:				both;
+}
+
+/* Login Styles */
+
+div.login {
+	margin:				100px auto;
+	padding:			25px;
+	width:				300px;
+    border: 			thin solid black;
+}
+
+div.login label {
+	display:			block;
+	float:				left;
+	clear:				left;
+	margin:				4px 0;
+	width:				100px;
+}
+
+div.login input {
+
+}
+
+div#login {
+	display:			block;
+	clear:				both;
+	float:				right;
+	margin:				25px 25px 0 0;
+}
+
+div#userArea {
+	float:				right;
+	margin:				5px 5px 0 0;
+}
+
+/* Text Formatting */
 
 .b {
 	font-weight:		bold;
