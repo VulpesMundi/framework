@@ -5,35 +5,35 @@ body {
 
 #content {
     
-	width: 900px;
-	margin: auto;
+	width: 		900px;
+	margin: 	auto;
 }
 
 
 #topPage {
-        position: 	static;
-        width: 		900px;
-        height: 	150px;
-        border: 	thin solid black; 
+    position: 	static;
+    width: 		900px;
+    height: 	150px;
+    border: 	thin solid black; 
 }
 
 #nav {
-        position: 	static;
+    position: 	static;
 	width: 	 	900px;
 	height: 	50px;
-        border: 	thin solid black;
+    border: 	thin solid black;
 }
 
 #subNav {
-        position: 	static;
+    position: 	static;
 	float: 		left;
-        width: 		200px;
+    width: 		200px;
 	height:		500px;
-        border: 	thin solid black;
+    border: 	thin solid black;
 }
 
 #page {
-        position: 	static;
+    position: 	static;
 	float:		right;
 	width:  	696px;
 	height:		500px;
@@ -41,9 +41,43 @@ body {
 }
 
 #footer {
-        position: 	static;
+    position: 	static;
 	clear:		both;
 	width:  	900px;
-        height: 	50px;
-        border: 	thin solid black;
+    height: 	50px;
+    border: 	thin solid black;
 }
+
+.b {
+	font-weight:		bold;
+}
+
+.i {
+	font-style:			italic;
+}
+
+.u {
+	text-decoration:	underline;
+}
+
+.bi {
+	font-weight:		bold;
+	font-style:			italic;
+}
+
+.bu {
+	font-weight:		bold;
+	text-decoration:	underline;
+}
+
+.iu {
+	font-style:			italic;
+	text-decoration:	underline;
+}
+
+.biu {
+	font-weight:		bold;
+	font-style:			italic;
+	text-decoration:	underline;
+}
+
