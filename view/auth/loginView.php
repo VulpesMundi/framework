@@ -4,6 +4,7 @@
 
     	<form id="loginForm" method="post" action="index.php?q=auth&a=processAuth">
     		<div class="login">
+                <div class="loginError"><?php print $formError; ?></div>
     			<label>Username:</label>
     			<input type="text" id="userID" name="userID" /><br />
     			<label>Password:</label>
