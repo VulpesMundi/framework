@@ -1,6 +1,8 @@
 
-      <!-- main navigation -->
-      <div id="nav">
+    <!-- main navigation -->
+    <div id="nav">
 
-      </div>
-      <!-- end main navigation -->
+        <a href="index.php?q=product">Products</a>
+
+    </div>
+    <!-- end main navigation -->

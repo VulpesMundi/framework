@@ -19,25 +19,33 @@ body {
 
 #nav {
     position:           static;
-    width:              900px;
+    width:              890px;
     height:             50px;
     border:             thin solid black;
+    padding:            10px 0 0 10px;
+}
+
+#nav a {
+    display:            block;
+    margin-top:         10px;
 }
 
 #subNav {
     position:           static;
     float:              left;
-    width:              200px;
-    height:             500px;
+    width:              190px;
+    height:             490px;
     border:             thin solid black;
+    padding:            10px 0 0 10px;
 }
 
 #page {
     position:           static;
     float:              right;
-    width:              696px;
+    width:              686px;
     height:             500px;
     border:             thin solid black;
+    padding:            0 0 0 10px;
 }
 
 #pageFullWidth {
