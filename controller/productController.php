@@ -8,15 +8,37 @@ include( APP_VIEW . "/nav.php" );
 
 switch ( $_GET["a"] ) {
 
+    case "addCart":
+        addToCart($_GET["prodID"]);
+        $categories = loadCategories();
+        $products = loadProductsByCategory($_GET["catID"]);
+        $cartBaseUrlAdd = "index.php?q=product&a=addCart&catID=" . $_GET["catID"];
+        $cartBaseUrlRem = "index.php?q=product&a=remCart&catID=" . $_GET["catID"];
+        include( APP_VIEW ."/product/productSubNav.php" );
+        include( APP_VIEW ."/product/productView.php" );
+        break;
+
     case "category":
         $categories = loadCategories();
         $products = loadProductsByCategory($_GET["id"]);
+        $cartBaseUrlAdd = "index.php?q=product&a=addCart&catID=" . $_GET["id"];
+        $cartBaseUrlRem = "index.php?q=product&a=remCart&catID=" . $_GET["id"];
         include( APP_VIEW ."/product/productSubNav.php" );
         include( APP_VIEW ."/product/productView.php" );
         break;
 
     case "list":
         $categories = loadCategories();
+        include( APP_VIEW ."/product/productSubNav.php" );
+        include( APP_VIEW ."/product/productView.php" );
+        break;
+
+    case "remCart":
+        remFromCart($_GET["prodID"]);
+        $categories = loadCategories();
+        $products = loadProductsByCategory($_GET["catID"]);
+        $cartBaseUrlAdd = "index.php?q=product&a=addCart&catID=" . $_GET["catID"];
+        $cartBaseUrlRem = "index.php?q=product&a=remCart&catID=" . $_GET["catID"];
         include( APP_VIEW ."/product/productSubNav.php" );
         include( APP_VIEW ."/product/productView.php" );
         break;
@@ -35,6 +57,10 @@ include( APP_VIEW . "/footer.php" );
 
 
 ##########  Local Functions  ##########
+
+function addToCart($prodID) {
+    $_SESSION["cart"][$prodID]++;
+}
 
 function loadCategories() {
 
@@ -78,5 +104,12 @@ function loadProductsByCategory($category) {
         }
 
     return $products;
+
+}
+
+function remFromCart($prodID) {
+    if (0 < $_SESSION["cart"][$prodID]) {
+        $_SESSION["cart"][$prodID]--;
+    }
 
 }
