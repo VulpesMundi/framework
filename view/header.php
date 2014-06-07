@@ -23,4 +23,7 @@
                         }
                     ?>
                 </div>
+                <div id="title">
+                    <h1>Web Storefront</h1>
+                </div>
             </div>
